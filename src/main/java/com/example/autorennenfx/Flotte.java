@@ -1,6 +1,7 @@
 package com.example.autorennenfx;
 
 import javafx.geometry.Point2D;
+import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 
@@ -8,11 +9,14 @@ public class Flotte {
     private ArrayList<Fahrzeug> fahrzeug;
 
     public Flotte() {
-
+        fahrzeug = new ArrayList<>();
+        fahrzeug.add(new Auto(100, Color.RED));
+        fahrzeug.add(new Auto(200, Color.BLUE));
+        fahrzeug.add(new Fahrrad(300, Color.GREEN));
     }
 
-    public ArrayList<Fahrzeug> getFahrzeug() {
-        return fahrzeug;
+    public void getFahrzeug() {
+        return ;
     }
 
     public int getAnzahl(){
